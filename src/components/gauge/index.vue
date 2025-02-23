@@ -7,7 +7,7 @@
 <template>
   <div class="wrap-container sn-container"> 
     <div class="sn-content"> 
-      <div class="sn-title">仪表盘</div> 
+      <div class="sn-title"></div> 
       <div class="sn-body"> 
         <div class="wrap-container"> 
           <div class="chartsdom" id="chart_gauge"></div> 
@@ -40,8 +40,8 @@ export default {
             name: '速度',
             type: 'gauge',
             min: 0,
-            max: 220,
-            splitNumber: 11,
+            max: 2,
+            splitNumber: 4,
             // radius: '50%',
             axisLine: {            // 坐标轴线
               lineStyle: {       // 属性lineStyle控制线条样式
@@ -81,7 +81,7 @@ export default {
             title: {
               textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE
                 fontWeight: 'bolder',
-                fontSize: 20,
+                fontSize: 18,
                 fontStyle: 'italic',
                 color: '#fff',
                 shadowColor: '#fff', //默认透明
@@ -97,13 +97,13 @@ export default {
               offsetCenter: [0, '50%'],       // x, y，单位px
               textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE
                 fontWeight: 'bolder',
-                fontSize: 25,
+                fontSize: 22,
                 color: '#fff'
               }
             },
             data: [{
-              value: 40, 
-              name: 'km/h'
+              value: 0, 
+              name: ''
             }]
         }]
       }
@@ -116,7 +116,7 @@ export default {
       });
 
       this.timer = setInterval(() => {
-        this.option.series[0].data[0].value = (Math.random()*100).toFixed(2) - 0;
+        this.option.series[0].data[0].value = (Math.random()*2).toFixed(2) - 0;
         myChart.setOption(this.option, true);
       },2000);
     }
@@ -129,10 +129,10 @@ export default {
 
 <style lang="scss" scoped>
 .sn-container {
-  left: 512px;
-  top: 2838px;
-  width: 432px;
-  height: 400px;
+  left: -16%;
+  top: -12%;
+  width: 130%;
+  height: 130%;
   .chartsdom {
     width: 100%;
     height: 100%;

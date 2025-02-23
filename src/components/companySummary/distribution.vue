@@ -166,25 +166,25 @@ export default {
           },
           data: [{
             value: 35,
-            name: '湖南'
+            name: '重金属'
           },{
             value: 28,
-            name: '河北'
+            name: '挥发性有机物'
           },{
             value: 23,
-            name: '广东'
+            name: '半挥发性有机物'
           },{
             value: 18,
-            name: '四川'
+            name: '石油烃'
           },{
             value: 13,
-            name: '浙江'
+            name: '甲醛、丙酮'
           },{
             value: 8,
-            name: '江苏'
+            name: '丙烯腈'
           },{
             value: 5,
-            name: '湖北'
+            name: '环己酮'
           }]
         }]
       }

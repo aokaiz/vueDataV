@@ -13,7 +13,7 @@
           <span class="tem">{{ weatcherData.tem }}°C</span> 
           <span class="wea">{{ weatcherData.wea }}</span>
         </div>
-        <h2>区块链科技公司品牌概览</h2>
+        <h2>土壤监测情况概览</h2>
         <div class="showTime">
           <span class="time">{{ nowTime }}</span>
           <span class="date">
@@ -26,18 +26,18 @@
       <section class="mainbox">
         <div class="item left">
           <div class="panel">
-            <h2>业务范围</h2>
-            <business />
+            <h2>土壤EC值</h2>
+            <gauge />
             <div class="panel-footer"></div>
           </div>
           <div class="panel">
-            <h2>人才队伍</h2>
+            <h2>土壤养分含量</h2>
             <talent />
             <div class="panel-footer"></div>
           </div>
           <div class="panel">
-            <h2>营收状况</h2>
-            <income />
+            <h2>土壤湿度</h2>
+            <waterPolo />
             <div class="panel-footer"></div>
           </div>
         </div>
@@ -47,46 +47,48 @@
             <div class="resume-hd">
               <ul>
                 <li>
-                  <countTo :startVal='startVal' :endVal='490' :duration='6000' separator=""></countTo>
+                  <countTo :startVal='startVal' :endVal='39' :duration='6000' separator=""></countTo>
                 </li>
                 <li>
-                  <countTo :startVal='startVal' :endVal='75' :duration='6000' separator=""></countTo>
+                  <countTo :startVal='startVal' :endVal='695' :duration='6000' separator=""></countTo>
                 </li>
                 <li>
-                  <countTo :startVal='startVal' :endVal='3000' :duration='6000' separator=""></countTo>
+                  <countTo :startVal='startVal' :endVal='95' :duration='6000' separator=""></countTo>
                 </li>
               </ul>
             </div>
             <div class="resume-bd">
               <ul>
-                <li>公司总人数（单位：人）</li>
-                <li>技术人员占比（单位：%）</li>
-                <li>产品投资额（单位：万元）</li>
+                <li>监测点个数（单位：个）</li>
+                <li>采样次数（单位：次）</li>
+                <li>达标占比（单位：%）</li>
               </ul>
             </div>
           </div>
           <div class="map">
-            <div class="chart" id="chart_map"></div>
-            <div class="map1"></div>
-            <div class="map2"></div>
+            <div>
+            <iframe src="http://124.71.167.191:9091/#/chat-demo" width="820" height="780" frameborder="0"></iframe>
+            </div>
+            
+            
             <div class="map3"></div>
           </div>
         </div>
 
         <div class="item right">
           <div class="panel">
-            <h2>产品热词</h2>
+            <h2>监测热词</h2>
             <wordCloud />
             <div class="panel-footer"></div>
           </div>
           <div class="panel">
-            <h2>客户分布</h2>
+            <h2>污染物含量分布</h2>
             <distribution />
             <div class="panel-footer"></div>
           </div>
           <div class="panel">
-            <h2>发展历程</h2>
-            <history />
+            <h2>污染物含量变化</h2>
+            <scrollArc />
             <div class="panel-footer"></div>
           </div>
         </div>
@@ -363,7 +365,7 @@ export default {
             type: "lines",
             zlevel: 1,
             effect: {
-              show: true,
+              show: false,
               period: 6,
               trailLength: 0.7,
               color: "red", //arrow箭头的颜色
@@ -385,7 +387,7 @@ export default {
             symbol: ["none", "arrow"],
             symbolSize: 10,
             effect: {
-              show: true,
+              show: false,
               period: 6,
               trailLength: 0,
               symbol: planePath,
@@ -464,7 +466,7 @@ export default {
               color: "#fff"
             }
           },
-          roam: false,
+          roam: true,
           //   放大我们的地图
           zoom: 1,
           itemStyle: {
@@ -506,7 +508,7 @@ export default {
     line-height: 1.15;
     header {
       position: relative;
-      height: 1rem;
+      height: 1.1rem;
       background: url(../assets/img/brand/head_bg.png) no-repeat top center;
       background-size: 100% 100%;
       h2 {
@@ -539,18 +541,18 @@ export default {
         color: rgba(126, 240, 255, .7);
         display: flex;
         .time {
-          font-size: .28rem;
+          font-size: .45rem;
           margin-right: .18rem;
         }
         .date {
           span {
             display: block;
             &:nth-child(1) {
-              font-size: .12rem;
+              font-size: .32rem;
               text-align: right;
             }
             &:nth-child(2) {
-              font-size: .14rem;
+              font-size: .28rem;
             }
           }
         }
@@ -750,7 +752,7 @@ export default {
             line-height: 0.6rem;
             text-align: center;
             color: #fff;
-            font-size: 0.225rem;
+            font-size: 0.255rem;
             font-weight: 400;
             a {
               margin: 0 0.1875rem;

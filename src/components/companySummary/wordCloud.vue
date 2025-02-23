@@ -65,19 +65,19 @@ export default {
             }
           },
           data: [{
-            name: '区块链',
+            name: '土壤污染',
             value: 810
           }, {
-            name: '云计算',
+            name: '污染监测',
             value: 520
           },{
-            name: "人工智能",
+            name: "生物特性",
             value: 928
           },{
-            name: "大数据",
+            name: "土壤功能",
             value: 906
           },{
-            name: "工业互联网",
+            name: "公众健康",
             value: 825
           },{
             name: "医疗",
@@ -86,85 +86,52 @@ export default {
             name: "质量溯源",
             value: 486
           },{
-            name: "政务",
+            name: "实验室分析",
             value: 53
           },{
-            name: "密码学",
+            name: "采样方法",
             value: 927
           },{
-            name: "金融行业",
+            name: "环境行业",
             value: 1308
           },{
-            name: "供应链",
+            name: "重金属污染",
             value: 693
           },{
-            name: "公有链",
+            name: "农药残留",
             value: 611
           },{
-            name: "私有链",
+            name: "有机污染物",
             value: 512
-          },{
-            name: "联盟链",
-            value: 382
           },{
             name: "数据共享",
             value: 312
           },{
-            name: "文创版权",
-            value: 187
-          },{
-            name: "天河链",
+            name: "敏感目标",
             value: 163
           },{
-            name: "数据存证",
+            name: "土壤修复",
             value: 104
           },{
-            name: "UDFS存储",
-            value: 3
-          },{
-            name: "在线教育",
+            name: "在线监测",
             value: 31
           },{
-            name: "关联分析",
-            value: 941
-          },{
-            name: "智慧停车",
-            value: 585
-          },{
-            name: "链云生态",
+            name: "毒性评价",
             value: 473
           },{
-            name: "应用层",
-            value: 358
-          },{
-            name: "网络层",
-            value: 246
-          },{
-            name: "数据层",
+            name: "固化处理",
             value: 207
           },{
             name: "基础层",
             value: 194
           },{
-            name: "智能合约",
-            value: 104
-          },{
-            name: "去中心化",
-            value: 87
-          },{
-            name: "数字货币",
-            value: 415
-          },{
-            name: "酷屏",
-            value: 253
-          },{
             name: "可视化",
             value: 211
           },{
-            name: "P2P",
+            name: "化学特性",
             value: 116
           },{
-            name: "数据挖掘",
+            name: "实验室分析",
             value: 1309
           }]
         }]

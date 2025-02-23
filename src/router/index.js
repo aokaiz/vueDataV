@@ -29,7 +29,7 @@ const routes = [
     name: 'Brand',
     component: () => import('@/views/Brand.vue'),
     meta: {
-      title: '公司品牌介绍'
+      title: '土壤监测'
     }
   }
 ]

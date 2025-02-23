@@ -102,7 +102,7 @@ export default {
       overflow: hidden;
     }
     .divider {
-      position: absolute;
+      position: static;
       left: 50px;
       top: 3253px;
       width: 90%;

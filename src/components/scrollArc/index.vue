@@ -7,7 +7,7 @@
 <template>
   <div class="wrap-container sn-container"> 
     <div class="sn-content"> 
-      <div class="sn-title">滚动弧形线</div> 
+      <div class="sn-title"></div> 
       <div class="sn-body"> 
         <div class="wrap-container"> 
           <div class="chartsdom" id="chart_arc"></div>
@@ -86,7 +86,7 @@ export default {
           },
         },
         series: [{
-          name: '人数',
+          name: '百分比',
           type: 'line',
           data: this.data,
           symbolSize: 10,
@@ -149,13 +149,13 @@ export default {
 
 <style lang="scss" scoped>
 .sn-container {
-  left: 50px;
-  top: 690px;
-  width: 895px;
-  height: 400px;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
   .chartsdom {
     width: 100%;
-    height: 95%;
+    height: 100%;
   }
 }
 </style>

@@ -25,22 +25,22 @@ export default {
     getEchartLeft2() {
       let myChart = echarts.init(document.getElementById('chart_left2'));
       let scaleData = [{
-        name: '博士',
+        name: '有机质',
         value: 5
       },{
-        name: '硕士',
+        name: '全氮',
         value: 10
       },{
-        name: '本科',
+        name: '速效氮',
         value: 10
       },{
-        name: '专科',
+        name: '全磷',
         value: 10
       },{
-        name: '国防科大',
+        name: '速效磷',
         value: 5
       },{
-        name: '大厂专家',
+        name: '全钾',
         value: 5
       }];
       let rich = {

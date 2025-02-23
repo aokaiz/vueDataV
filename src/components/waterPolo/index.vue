@@ -7,7 +7,7 @@
 <template>
   <div class="wrap-container sn-container"> 
     <div class="sn-content"> 
-      <div class="sn-title">水球图</div> 
+      <div class="sn-title"></div> 
       <div class="sn-body"> 
         <div class="wrap-container"> 
           <div class="chartsdom" id="chart_polo"></div> 
@@ -68,10 +68,10 @@ export default {
 
 <style lang="scss" scoped>
 .sn-container {
-  left: 974px;
-  top: 2838px;
-  width: 432px;
-  height: 400px;
+  left: -17%;
+  top: -12%;
+  width: 130%;
+  height: 130%;
   .chartsdom {
     width: 100%;
     height: 100%;

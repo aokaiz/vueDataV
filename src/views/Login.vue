@@ -9,7 +9,7 @@
   	<div class="layer">
   			<div class="some-space">
         	<div class="form">
-						<h2>大数据可视化平台</h2>
+						<h2>土壤监测可视化平台</h2>
 						<div class="item">
 							<i class="iconfont icon-user"></i>
 							<input
@@ -39,7 +39,7 @@
 	            立即登录
 	          </button>
 	          <div class="tip">
-							默认用户名：admin ，默认密码：123456
+							默认用户名：ciit ，默认密码：123456
 	          </div>
         	</div>
         </div>
@@ -83,7 +83,7 @@ export default {
   components: {},
   data() {
   	return {
-  		userName: 'admin',
+  		userName: 'ciit',
   		userPwd: '123456',
       visible: false,
       modalContent: '这是一段自定义模态框消息'
@@ -100,9 +100,9 @@ export default {
   },
   methods: {
   	login () {
-  		if (this.userName == 'admin' && this.userPwd == '123456') {
+  		if (this.userName == 'ciit' && this.userPwd == '123456') {
          this.$router.push({
-          path: '/home'
+          path: '/brand'
          })
       } else {
         this.$Toast({
